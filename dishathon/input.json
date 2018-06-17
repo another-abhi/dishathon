@@ -1,0 +1,77 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": false,
+		"sessionId": "amzn1.echo-api.session.69680aca-c240-4bbc-8df0-6615cd403aef",
+		"application": {
+			"applicationId": "amzn1.ask.skill.fce6941b-19b6-414e-9edf-4511702bc7ce"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AGM5776UBGCEHIFIHNMHN5HCGX6WL6K2RWXBJVEVPPW5AJDYXAKCTUOQTKIJ7KAJG4PBSMVGKJKG5XSUEDXV4GXKS6JCREXJLA2VCOG5FMJPVFAL3YA5ZUHYPTUHGN3ODEW52RRZJ257VUKIOMWIFKJV2EJ465BQMSNXDFLEAPFLWPI2SR55S3JS7GSFFIYCLY7J2BGRCRLHGLA"
+		}
+	},
+	"context": {
+		"AudioPlayer": {
+			"playerActivity": "IDLE"
+		},
+		"Display": {
+			"token": ""
+		},
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.fce6941b-19b6-414e-9edf-4511702bc7ce"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.AGM5776UBGCEHIFIHNMHN5HCGX6WL6K2RWXBJVEVPPW5AJDYXAKCTUOQTKIJ7KAJG4PBSMVGKJKG5XSUEDXV4GXKS6JCREXJLA2VCOG5FMJPVFAL3YA5ZUHYPTUHGN3ODEW52RRZJ257VUKIOMWIFKJV2EJ465BQMSNXDFLEAPFLWPI2SR55S3JS7GSFFIYCLY7J2BGRCRLHGLA"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.AGI4KH37ILHEORSUVVSE7EV4CEW4WBMBHZQ3TYRJRVAMX4X77BFJBZCKWXBUHOS3UDC5GVWDQKH263LQGYJNX5KKIEBOL2PJJGZXQGKZTNHJRV24PNZYBRNXOJ4DLH77PHP53E3JHSMMYCCKYRHXE3FVTUFQ",
+				"supportedInterfaces": {
+					"AudioPlayer": {},
+					"Display": {
+						"templateVersion": "1.0",
+						"markupVersion": "1.0"
+					}
+				}
+			},
+			"apiEndpoint": "https://api.amazonalexa.com",
+			"apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmZjZTY5NDFiLTE5YjYtNDE0ZS05ZWRmLTQ1MTE3MDJiYzdjZSIsImV4cCI6MTUyOTE1ODI3OSwiaWF0IjoxNTI5MTU0Njc5LCJuYmYiOjE1MjkxNTQ2NzksInByaXZhdGVDbGFpbXMiOnsiY29uc2VudFRva2VuIjpudWxsLCJkZXZpY2VJZCI6ImFtem4xLmFzay5kZXZpY2UuQUdJNEtIMzdJTEhFT1JTVVZWU0U3RVY0Q0VXNFdCTUJIWlEzVFlSSlJWQU1YNFg3N0JGSkJaQ0tXWEJVSE9TM1VEQzVHVldEUUtIMjYzTFFHWUpOWDVLS0lFQk9MMlBKSkdaWFFHS1pUTkhKUlYyNFBOWllCUk5YT0o0RExINzdQSFA1M0UzSkhTTU1ZQ0NLWVJIWEUzRlZUVUZRIiwidXNlcklkIjoiYW16bjEuYXNrLmFjY291bnQuQUdNNTc3NlVCR0NFSElGSUhOTUhONUhDR1g2V0w2SzJSV1hCSlZFVlBQVzVBSkRZWEFLQ1RVT1FUS0lKN0tBSkc0UEJTTVZHS0pLRzVYU1VFRFhWNEdYS1M2SkNSRVhKTEEyVkNPRzVGTUpQVkZBTDNZQTVaVUhZUFRVSEdOM09ERVc1MlJSWkoyNTdWVUtJT01XSUZLSlYyRUo0NjVCUU1TTlhERkxFQVBGTFdQSTJTUjU1UzNKUzdHU0ZGSVlDTFk3SjJCR1JDUkxIR0xBIn19.Yf7Saa1JDyDjhktl9sncHau9tlRFxHtLFIVIsw5oYtr1MdwyXlW0EuIYAHrZ2OoxCWpcWUtKT30IR44nXeA5DdUfH8uuBtIiL8BO0UgFGEASdd9HOTEcinneYQPcQBNvC6OnDAwFuJM2Tr3Vykq2-tKQFZWihexVjsCGcOUY3aK_fsjpKuTnZUMiCCu3-doxV8T80tBdNL4R1BaNg9ur4B6EgMk26AmVLDk7rhaZuqHMV8a-z3utSy7DczCuR6m5J5rkWqhAr9HCSl8fZS81Mwc4wsexNUoU3XWvi2k1LiFtHNe4gLQnIeUCWEC9-G0uTTYlJxxtNh2dgT7Ur0QFNQ"
+		}
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "amzn1.echo-api.request.c2dc7a60-4ed9-40a8-b099-444e9459afbf",
+		"timestamp": "2018-06-16T13:11:19Z",
+		"locale": "en-US",
+		"intent": {
+			"name": "FindChannelNumberIntent",
+			"confirmationStatus": "NONE",
+			"slots": {
+				"channelName": {
+					"name": "channelName",
+					"value": "aaj tak",
+					"resolutions": {
+						"resolutionsPerAuthority": [
+							{
+								"authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.fce6941b-19b6-414e-9edf-4511702bc7ce.DishTVChannels",
+								"status": {
+									"code": "ER_SUCCESS_MATCH"
+								},
+								"values": [
+									{
+										"value": {
+											"name": "Aaj Tak",
+											"id": "df8763719fc71b7b956c68ee610cd688"
+										}
+									}
+								]
+							}
+						]
+					},
+					"confirmationStatus": "NONE"
+				}
+			}
+		},
+		"dialogState": "STARTED"
+	}
+}

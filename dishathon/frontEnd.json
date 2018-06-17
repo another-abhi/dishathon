@@ -1,0 +1,2932 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my dishtv",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FindChannelNumberIntent",
+                    "slots": [
+                        {
+                            "name": "channelName",
+                            "type": "DishTVChannels",
+                            "samples": [
+                                "{channelName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "tell me the channel number for {channelName}",
+                        "find channel number for {channelName}",
+                        "what is channel number of {channelName}",
+                        "find where {channelName} is",
+                        "find channel number of {channelName}"
+                    ]
+                },
+                {
+                    "name": "FindPlayingNowIntent",
+                    "slots": [
+                        {
+                            "name": "channelName",
+                            "type": "DishTVChannels",
+                            "samples": [
+                                "{channelName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "tell me whats playing on {channelName} right now",
+                        "tell me what's on {channelName}",
+                        "find what is playing on {channelName}",
+                        "tell me what i can watch in {channelName} right now",
+                        "tell me what is playing now on {channelName} "
+                    ]
+                },
+                {
+                    "name": "FindTroubleshootIntent",
+                    "slots": [],
+                    "samples": [
+                        "why is dishtv not turning on ",
+                        "whats wrong with dishtv ",
+                        "find whats wrong with tv ",
+                        "tell me whats wrong with my tv",
+                        "find whats wrong with my dishtv  "
+                    ]
+                },
+                {
+                    "name": "FindCIDIntent",
+                    "slots": [
+                        {
+                            "name": "CID",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "{CID} is my card number",
+                        "my card number is {CID} "
+                    ]
+                },
+                {
+                    "name": "ResetIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me the steps to reboot the set top box",
+                        "tell me the steps to reset the dishtv",
+                        "tell me how to reboot the system",
+                        "tell me how to reset my dishtv",
+                        "tell me how to reset the set top box "
+                    ]
+                },
+                {
+                    "name": "StatsIntent",
+                    "slots": [
+                        {
+                            "name": "CID",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "tell me the connection properties for card number {CID}",
+                        "tell me my system stats for card number {CID}"
+                    ]
+                },
+                {
+                    "name": "ShowDataIntent",
+                    "slots": [
+                        {
+                            "name": "showName",
+                            "type": "AMAZON.TVSeries"
+                        }
+                    ],
+                    "samples": [
+                        "tell me where to watch {showName}",
+                        "find which channel is airing {showName}",
+                        "tell me where to find {showName}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "DishTVChannels",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "& Picture HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "& Pictures"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "& TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "& TV HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "&FLIX"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "&FLIX HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "&PRIVE HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "24 Ghanta"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "9X JALWA - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "9X Jhakaas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "9X Tashan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "9XM- FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aaj Tak"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aakash Aath"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AAPLA MANORANJAN"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AASTHA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AASTHA BHAJAN"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ABN ANDHRA JYOTHI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ABP Ananda"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ABP Ashmita"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ABP Majha"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ABP News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ABZY.COM."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Adithya TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR VBS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR ASSAMESE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR Bangla"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR BHOPAL - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR CHENNAI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Air Fm gold chennai"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR FM GOLD KOLKATA - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR FM RAINBOW MUMBAI- FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR Gujrati"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR Hindi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR JAIPUR - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR Kannada"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR LUCKNOW - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR MALAYALAMM"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR MARATHI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR NATIONAL"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR NE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR ORIYA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR PATNA - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR Punjabi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR RAGAM"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR TAMIL"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR TELGU"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AIR URDU"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALANKAR TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aljazeera"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amrita Tv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ANDY HARYANA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Angel Tv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Animal Planet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Animal Planet HD World"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ARIHANT"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ASIANET"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ASIANET HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Asianet Movies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ASIANET News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ASIANET Plus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Assam Talks"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AXN"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Axn HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B4U Movies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B4u Music"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Baby tv HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BABY TV SD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BBC EARTH HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BBC World News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bhakti Active"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BHAKTI TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bhojpuri Cinema"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BIG GANGA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BIG MAGIC"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BTV NEWS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BTVi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Captain TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cartoon Network"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CGTN News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Channel V"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CHANNEL WIN"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CHARDIKLA TIME TV- FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CHINTU TV (SUN)"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chithiram"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chutti TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cinema TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CINEPLEX HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CNBC BAZAAR"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CNBC PRIME HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CNBC TV 18"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CNBCAwaaz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CNN INTL"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CNN NEWS 18"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colors"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colors Bangla"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colors Bangla HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colors Gujarati"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colors HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colors Infinity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colors Infinity HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colors Kannada"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colors Kannada HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colors Marathi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COLORS MARATHI HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colors Oriya"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Colors Super"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COLORS TAMIL"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Comedy Active"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Comedy Central"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Comedy Central HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COOKING ACTIVE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dabang"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DANCE ACTIVE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DANGAL TV - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD BANGLA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD BHARATI- FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD Bihar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD CHANDANA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD GIRNAR - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD INDIA- FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD KASHIR"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD KISAN"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD MALAYALAM"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD MP"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD NATIONAL SD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD NEWS- FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD NORTH EAST"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD ORIYA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD PODHIGAI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD PUNJABI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD RAJASTHAN"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD SAHYADRI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD Saptagiri"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD SPORTS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD UP"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD URDU"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD YADAGIRI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DD6 Oriya"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dhoom Music"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DIGHVIJAY TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DIGISHALA- FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Discovery"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Discovery Science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Discovery Turbo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Discovery HD World"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DISCOVERY JEET"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Discovery Kids"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Discovery Tamil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dish box office premier"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Disha tv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DISNEY"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DISNEY INTERNATIONAL HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Disney Junior"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DISNEY STORIES"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Disney XD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Divya TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dsport"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DV MOVIE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DY365"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ENTERR 10 - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "EPIC TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ET Now"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ETV andhara pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ETV Bangla News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Etv Cinema"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ETV HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ETV LIFE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ETV PLUS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ETV Telangana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ETV Telugu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "EVERGREEN CLASSICS ACTIVE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "EZ MALL"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FAKT MARATHI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fashion TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Flowers TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FM Gold"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FM Gold MUMBAI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FM RAINBOW"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FM RAINBOW BLORE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FM RAINBOW KOLKATA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fox life"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fox life HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "France 24"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FYI TV 18"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GAMES ACTIVE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gemini Music"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gemini Comedy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gemini Movies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gemini TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gemini TV HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GEMPORIA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GOD TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Goodness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GS TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GULISTAN NEWS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HBO"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HBO HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "History tv 18"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "History TV 18 HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HomeShop 18"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HOUSEFULL ACTION - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HOUSEFULL Movies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hungama"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ibadat Active"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "IBC 24"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "India News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "INDIA TODAY"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "INDIA TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Isai Aruvi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ishwar TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "JAI MAHARASHTRA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jalsha Movies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "JALSHA MOVIES HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Janam TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jaya Max"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jaya Plus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "JAYA TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jeevan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "JINVANI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "JONACK TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "JYOTISH DUNIYA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kairali TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kalaignar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KALINGA TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KANAK NEWS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kappa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kasturi TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KAUMUDY"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KHUSHI TV (SUN)"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KIDS RHYMES"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KIDS TOONS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kochu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kolkatta TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KTV HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Living Foodz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LOKSABHA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Maa Gold"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MAA HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Maa Movies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Maa Music"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Maa TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MAHA MOVIE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MAHAVIRA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Maiboli"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Makkal Tholaikatchi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Manorama News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MANORANJAN MOVIES - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MANORANJAN TV - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MASTI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mathrubhumi News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MAX HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MAZHAVIL MANORMA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MBC TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Media One"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mega TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MH-1 (SD)"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 10"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 11"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 12"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 13"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 14"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 15"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 16"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 17"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 18"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 19"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 20"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 21"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 22"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 23"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 24"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 25"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 26"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 27"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 28"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 29"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 30"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 31 - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 32"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 33 - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 34 - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 4"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 5"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 6"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 7"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 8"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MHRD 9"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MIRROR NOW"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MN+ HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MNX"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Movie House*"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MOVIES ACTIVE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Movies Now"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Movies OK"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MTV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MTV Beats"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MTV Beats HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MULTIPLEX"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Murasu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MUSIC ACTIVE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MUSIC ACTIVE HITS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MUSIC ACTIVE MASALA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Music Fatafati"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Music India"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "N TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Naaptol Telugu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nat Geo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nat Geo HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAT GEO PEOPLE SD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAVGRAH"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NDTV 24X7"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NDTV Good Times"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NDTV India"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NDTV Profit/Prime"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEPAL 1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "News 18 Assam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS 18 BIHAR/ JHARKHAND"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS 18 GUJARATI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS 18 KERALA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS 18 LOKMAT"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS 18 MP/ CHATTISGARH"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS 18 PUNJAB HARYANA HIMACHAL"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS 18 RAJASTHAN"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS 18 UP/UTTRAKHAND"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS 18 URDU"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "News 24"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "News 7 Tamil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "News Live"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS NATION - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "News State"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "News Time Bangla"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "News18 India"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS18 KANNADA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS18 ORIYA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NEWS18 TAMIL"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NGC Music HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NGC People HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NGC Wild"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NGC Wild HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NICK"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nick HD +"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nick Junior"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NT 1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NT7"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "OFFERGURU.COM"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "OTV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PEACE OF MIND"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "People"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PITAARA TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pogo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "POLIMER TV - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PRAG TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "prameya news 7"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Prarthana TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pratidin Time"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pravah HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ptc Chakde"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PTC News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PTC Punjabi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Public TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "puthuyugam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Putthiya thalaimari"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "R PLUS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RADIO KASHIR"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Raj Digital"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "raj musicx kannda"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Raj TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RAJYA SABHA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RAMDHENU"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RANG TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RENGONI TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Reporter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "REPUBLIC TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rishtey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rishtey Cineplex"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Romedy Now"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ROMEDY NOW HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Russia Today"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SAB HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SADHANA BHAKTI - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sadhna Plus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Safari"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sakshi TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sangeet Bangla"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SANGEET BHOJPURI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sangeet Marathi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SANSKAR"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SANSKRITI TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sarthak TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Satsang"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Seithigal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SHALOM"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shop cj 1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shubh Tv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Siripoli"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SKYSTAR MOVIES"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sonic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SONY"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sony Aath"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sony ESPN"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SONY ESPN HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sony HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sony MAX"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sony MAX 2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SONY MIX"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SONY PAL"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sony PIX"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sony PIX HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sony SAB TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sony Six"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sony SIX HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SONY TEN 1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SONY TEN 1 HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SONY TEN 2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sony TEN 2 HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SONY TEN 3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SONY WAH - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SONY YAY"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SRI SANKARA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR BHARAT"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR BHARAT - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR BHARAT HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star Gold"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star Gold HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR GOLD SELECT"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR GOLD SELECT HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star Jalsha"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR JALSHA HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star Movies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star Movies HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star Movies Select HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star Plus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star Plus HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star Pravah"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star Sports 1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR SPORTS 1 HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR SPORTS 1 HINDI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR SPORTS 1 HINDI HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR SPORTS 1 TAMIL"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star sports 2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR SPORTS 2 HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR SPORTS FIRST -FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR SPORTS SELECT 1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR SPORTS SELECT 1 HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR SPORTS SELECT 2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR SPORTS SELECT 2 HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star Suvarna"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star Suvarna Plus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR UTSAV - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR UTSAV Movies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR Vijay"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "STAR VIJAY SUPER"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star World"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star World HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star World Premiere HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stv Haryana News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Subhavartha Tv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sun Music"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sun Music HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sun News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SUN TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sun Tv HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SURYA MOVIES"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Surya TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Suvarna News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SVBC"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "T NEWS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tarang"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tarang Music"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tez"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thanthi TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thirai Ulagam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Times Now"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TLC"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TLC HD World"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TOLLYWOOD TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Travel XP"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Travel XP HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TV 10 Telugu News/Gemini news"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TV 5"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TV 9 KANNADA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TV 9 MARATHI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TV 9 TELUGU"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TV9 gujarati"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Udaya Movies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Udaya Comedy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Udaya Music"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Udaya News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Udaya TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UTV Action"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UTV Bindass"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UTV Movies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "V 6 NEWS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VAANI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vasanth Tv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VEDIC"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VH1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Warner Brothers"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "WE TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "WION"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Wow Cinema"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee 24 Taas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Action"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Anmol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Anmol Cinema"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZEE Bangla"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Bangla Cinema"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZEE BANGLA HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZEE BIHAR JHARKHAND"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Business"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZEE Café"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Café Hd"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Cinema"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Cinema HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZEE CINEMALU"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Classic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee ETC Bollywood"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZEE HINDUSTAN - FTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZEE KALAK"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Kalinga News"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZEE Kannada"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Madhya Pradesh Chattisgarh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZEE Marathi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Marathi HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee NEWS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZEE NEWS +"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Punjab Haryana Himachal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Rajasthan news"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Salaam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZEE TALKIES"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Talkies HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Tamil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Telegu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee TV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Tv HD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZEE UP/UK"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zee Yuva"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zoom"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "FindChannelNumberIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "channelName",
+                            "type": "DishTVChannels",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.958478741921.136949393306"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "FindPlayingNowIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "channelName",
+                            "type": "DishTVChannels",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1359217718399.667290357707"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "FindTroubleshootIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": []
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.958478741921.136949393306",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which channel do you want?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1359217718399.667290357707",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which channel do you want to check?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.981465802045.1366301372213",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is your customer id"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.485448966679.269042794087",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is your cid?"
+                    }
+                ]
+            }
+        ]
+    }
+}

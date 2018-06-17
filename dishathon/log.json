@@ -1,0 +1,41 @@
+[{
+ "card_number": 0150,
+ "signal strength": 70,
+ "smart card status": "inserted",
+ "quality": 100,
+ "version": "3.5.2",
+ "satellite": "INSAT-4A",
+ "frequency": 11.001,
+ "symbol rate": 27.5,
+ "error": 102
+}, {
+ "card_number": 0151,
+ "signal strength": 70,
+ "smart card status": "not inserted",
+ "quality": 100,
+ "version": "2.5.2",
+ "satellite": "INSAT-4B",
+ "frequency": 11.001,
+ "symbol rate": 27.5,
+ "error": 103
+}, {
+ "card_number": 0152,
+ "signal strength": 70,
+ "smart card status": "insufficient balance",
+ "quality": 100,
+ "version": "3.5.2",
+ "satellite": "INSAT-4C",
+ "frequency": 11.001,
+ "symbol rate": 27.5,
+ "error": 104
+}, {
+ "card_number": 0153,
+ "signal strength": 70,
+ "smart card status": "inserted",
+ "quality": 100,
+ "version": "3.5.2",
+ "satellite": "INSAT-4A",
+ "frequency": 11.001,
+ "symbol rate": 27.5,
+ "error": false
+}]
